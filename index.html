@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.5, shrink-to-fit=no"/>
+	<!-- <meta name="ms-viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.5"/> -->
+	<title>地铁图</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" media="screen">
+    <link rel="stylesheet" href="style.min.css">
+	<style type="text/css">
+	/*html,body{width: 2000px;height: 2000px;}*/
+	</style>
+</head>
+<body class = "disable-default-action">
+<nav></nav>
+<div id="subway">
+	<div id="subwaySvg" style="display:none;"></div>
+	<img id="transfer-img" src="transfer-station.png" style="display:none"/>
+	<canvas id="subwayCanvas" width="800" height="800" style="display:none;"></canvas>
+	<div class="station-out-box subway-content" style="width:800px;height:800px;position:absolute;top:0; left:0;display:none;"></div>
+	<div id="subway-caption" style="position:absolute;top:200px;left:100px;"></div>
+</div>
+<div class="loading-bg" style="display:none">	
+	<div class="loading-outer">
+		<div class="loading">
+			<img class="loading-img" src="loading.gif">
+			<div class="loading-txt">正在加载，请稍候...</div>
+		</div>
+	</div>
+</div>
+<script src="railway.js"></script>
+<script type="text/javascript">
+// alert('5');
+SW.swInit();
+</script>
+</body>
+</html>
